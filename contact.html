@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<h1 class="brand"><a href="index.html">PeakHire</a></h1>
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<main class="container">
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+<input name="name" placeholder="Name" required>
+<input name="email" type="email" placeholder="Email" required>
+<select name="reason">
+<option value="clients">Clients</option>
+<option value="candidates">Candidates</option>
+<option value="students">Student Service</option>
+<option value="general">General Enquiry</option>
+</select>
+<textarea name="message" placeholder="Message" required></textarea>
+<button type="submit" class="btn-primary">Send</button>
+<p id="formStatus"></p>
+</form>
+
+</main>
+
+<footer class="site-footer">© <span id="year4"></span> PeakHire</footer>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
